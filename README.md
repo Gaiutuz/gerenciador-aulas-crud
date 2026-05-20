@@ -70,7 +70,6 @@ docker compose -f docker-compose.dev.yml up --build
 
 - Frontend (Vite HMR): **http://localhost:5173**
 - Backend (Flask debug): **http://localhost:5000**
-<img width="1916" height="958" alt="tela-crud" src="https://github.com/user-attachments/assets/9db31e63-773e-4fd3-912f-25948e310eaa" />
 
 ---
 
