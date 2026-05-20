@@ -1,10 +1,12 @@
-# 📚 Sistema de Gerenciamento de Planos de Aula
+# Sistema de Gerenciamento de Planos de Aula
 
 Aplicação full stack para criação, organização e consulta de planos de aula, com **Smart Assist** — um assistente pedagógico alimentado por IA (OpenAI GPT-4o-mini) que sugere conteúdos, tópicos e tags automaticamente.
 
+<img width="1916" height="958" alt="tela-crud" src="https://github.com/user-attachments/assets/3ba43abe-5f2f-4673-b886-5099a7df9715" />
+
 ---
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 - **CRUD completo** de planos de aula com paginação
 - **Smart Assist (IA)**: geração automática de conteúdos, recursos de apoio e tags via GPT-4o-mini
@@ -18,7 +20,7 @@ Aplicação full stack para criação, organização e consulta de planos de aul
 
 ---
 
-## 🛠 Stack Tecnológica
+## Stack Tecnológica
 
 | Camada     | Tecnologia                                |
 |------------|-------------------------------------------|
@@ -35,7 +37,7 @@ Aplicação full stack para criação, organização e consulta de planos de aul
 
 ---
 
-## 🚀 Execução Local com Docker
+## Execução Local com Docker
 
 ### Pré-requisitos
 
@@ -68,10 +70,11 @@ docker compose -f docker-compose.dev.yml up --build
 
 - Frontend (Vite HMR): **http://localhost:5173**
 - Backend (Flask debug): **http://localhost:5000**
+<img width="1916" height="958" alt="tela-crud" src="https://github.com/user-attachments/assets/9db31e63-773e-4fd3-912f-25948e310eaa" />
 
 ---
 
-## ⚙️ Variáveis de Ambiente
+## Variáveis de Ambiente
 
 Crie `backend/.env` com base em `backend/.env.example`:
 
@@ -84,7 +87,7 @@ OPENAI_MODEL=gpt-4o-mini
 CORS_ORIGINS=http://localhost:5173,http://localhost:3000
 ```
 
-> ⚠️ **Nunca comite o arquivo `.env`**. Ele está no `.gitignore`.
+>  **Nunca comite o arquivo `.env`**. Ele está no `.gitignore`.
 
 ---
 
@@ -118,7 +121,7 @@ CORS_ORIGINS=http://localhost:5173,http://localhost:3000
 
 ---
 
-## 🤖 Smart Assist — Prompt Engineering
+##  Smart Assist — Prompt Engineering
 
 O backend envia ao GPT-4o-mini um **system prompt** que o instrui a agir como "Assistente Pedagógico". O modelo retorna obrigatoriamente JSON no formato:
 
@@ -134,7 +137,7 @@ O uso de `response_format: { type: "json_object" }` garante que a resposta seja 
 
 ---
 
-## 📊 Observabilidade
+##  Observabilidade
 
 Todos os logs são emitidos em **JSON estruturado** via `structlog`. Exemplo de log de interação com a IA:
 
@@ -155,7 +158,7 @@ Todos os logs são emitidos em **JSON estruturado** via `structlog`. Exemplo de 
 
 ---
 
-## 🔁 CI/CD (GitHub Actions)
+##  CI/CD (GitHub Actions)
 
 O pipeline roda a cada `push` e `pull_request`:
 
@@ -165,7 +168,7 @@ O pipeline roda a cada `push` e `pull_request`:
 
 ---
 
-## 🗂 Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```
 lesson-planner/
@@ -214,7 +217,7 @@ lesson-planner/
 
 ---
 
-## 🎨 Decisões de Design
+##  Decisões de Design
 
 - **Tipografia**: DM Serif Display (títulos) + DM Sans (corpo) — sofisticado e legível
 - **Paleta**: Tons de pergaminho, tinta escura e dourado — remete ao universo editorial/acadêmico
