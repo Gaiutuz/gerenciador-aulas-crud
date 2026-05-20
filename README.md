@@ -227,6 +227,6 @@ lesson-planner/
 
 ---
 
-## 📝 Licença
+##  Licença
 
 MIT © 2024
